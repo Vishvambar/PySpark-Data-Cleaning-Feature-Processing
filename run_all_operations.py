@@ -1,5 +1,5 @@
 """
-Non-Interactive Evaluator Runner: Executes all PySpark Operations Step-by-Step.
+Non-Interactive Automated Verification Suite: Executes all PySpark Operations Step-by-Step.
 Outputs cleanly formatted summary tables, execution timings, and verification metrics.
 """
 
@@ -35,7 +35,7 @@ def run_evaluation_suite():
     # 2. SparkSession Instantiation
     t0 = time.time()
     print("\n>>> OPERATION 2: Instantiating Localized Apache SparkSession...")
-    spark = get_spark_session("PySpark_Evaluator_Suite")
+    spark = get_spark_session("PySpark_Verification_Suite")
     timings["SparkSession Startup"] = time.time() - t0
 
     # 3. Data Cleaning

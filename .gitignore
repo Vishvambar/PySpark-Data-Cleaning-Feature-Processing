@@ -1,9 +1,0 @@
-__pycache__/
-*.py[cod]
-*$py.class
-*.log
-.DS_Store
-*.crc
-.*.crc
-venv/
-.env

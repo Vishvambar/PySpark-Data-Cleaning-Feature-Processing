@@ -27,7 +27,7 @@ fi
 
 # 2. Execution Routing
 if [ "$1" == "test" ] || [ "$1" == "--test" ]; then
-    echo "Running PySpark Automated Evaluator Suite..."
+    echo "Running PySpark Automated Verification Suite..."
     "$PYTHON_EXEC" run_all_operations.py
 elif [ "$1" == "pipeline" ] || [ "$1" == "--pipeline" ]; then
     echo "Running PySpark End-to-End Pipeline..."

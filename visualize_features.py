@@ -1,6 +1,6 @@
 """
 Visual Analytics and Chart Generator for PySpark Data Cleaning & Feature Processing.
-Generates 300 DPI publication-quality charts for lab documentation and evaluator submission:
+Generates 300 DPI publication-quality charts for technical documentation and system verification:
   1. visualizations/1_data_cleaning_audit.png
   2. visualizations/2_feature_distributions_transformation.png
   3. visualizations/3_pyspark_feature_dashboard.png

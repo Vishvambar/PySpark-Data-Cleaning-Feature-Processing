@@ -1,21 +1,16 @@
-# EXPERIMENT 5: Data Frame Manipulation, Data Cleaning, and Feature Processing using Apache PySpark
+# Technical Specification & System Architecture
+## Distributed Data Cleaning & Feature Processing using Apache PySpark
 
 ---
 
-## 1. Title & Aim
-- **Title**: Data Frame Manipulation, Data Cleaning, and Feature Processing using PySpark
-- **Aim**: To setup a localized PySpark environment, instantiate a distributed Spark Session, construct structured DataFrames, and perform foundational operations for engineering clean, model-ready data features.
-- **Target System**: Apache Spark 3.5.3 / PySpark MLlib on OpenJDK 17 & Python 3.12 LTS.
+## 1. Project Title & Architectural Scope
+- **Project**: Distributed Data Cleaning & Feature Processing using PySpark
+- **Scope**: Localized high-throughput Apache PySpark pipeline, distributed SparkSession orchestration, explicit `StructType` schema ingestion, statistical data cleaning, and PySpark ML feature vectorization.
+- **Target Runtime**: Apache Spark 3.5.3 / PySpark MLlib on OpenJDK 17 & Python 3.12 LTS.
 
 ---
 
-## 2. Course Outcomes & Educational Objectives
-### Course Outcomes (CO)
-- **CO2**: Design and implement distributed data processing workflows using modern data engineering frameworks.
-- **CO3**: Apply distributed data transformation, missing value imputation, and schema enforcement techniques on large-scale datasets.
-- **CO5**: Construct automated feature processing and vectorization pipelines suitable for distributed machine learning workloads.
-
-### Objectives
+## 2. Core Architectural Objectives
 1. Instantiate and configure an optimized localized Apache SparkSession with tuned parallelism and memory management.
 2. Formulate explicit `StructType` schemas to ingest semi-structured and unstructured data sources reliably without schema inference overhead.
 3. Perform distributed data cleaning: deduplication (`.dropDuplicates()`), missing value imputation (`Imputer`), text normalization, and statistical outlier capping (Winsorization).
@@ -273,7 +268,7 @@ The pipeline was executed and benchmarked via [run_all_operations.py](file:///ho
 
 ---
 
-## 8. Comprehensive Viva Voce Questions & Technical Answers
+## 8. Technical Architecture FAQs & Design Decisions
 
 ### Q1: What is the difference between PySpark and Pandas DataFrames?
 **Answer**:
@@ -324,8 +319,8 @@ PySpark uses **Py4J** to communicate between Python and the JVM. The driver prog
 
 ---
 
-## 9. Conclusion
-Experiment 5 successfully established a robust, localized Apache PySpark environment on Linux. The pipeline demonstrated:
+## 9. Architecture Summary & Production Impact
+The distributed PySpark data cleaning and feature processing pipeline demonstrated:
 1. Automated environment resolution across OpenJDK 17 and Python 3.12.
 2. High-performance CSV ingestion with explicit `StructType` schema contracts.
 3. 100% resolution of missing values, string anomalies, and statistical outliers via distributed PySpark transformations.

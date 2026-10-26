@@ -35,7 +35,7 @@ def print_menu():
     print("  [4] Run PySpark ML Feature Pipeline (One-Hot, Assembler, Scaler)")
     print("  [5] Run Window Analytics & Cohort Aggregations")
     print("  [6] Generate Publication-Grade Visualizations (300 DPI)")
-    print("  [7] Run Automated Evaluator Suite with Timings & Verification")
+    print("  [7] Run Automated Verification Suite with Timings & Benchmarks")
     print("  [0] Exit")
 
 

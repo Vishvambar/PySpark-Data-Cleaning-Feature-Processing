@@ -7,7 +7,7 @@
 [![Pipeline](https://img.shields.io/badge/ML%20Pipeline-7%20Stages-brightgreen.svg)]()
 [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)]()
 
-> **Practical Experiment 5**: Setup a localized PySpark environment, instantiate a distributed Spark Session, construct structured DataFrames, and perform foundational operations for engineering clean, model-ready data features.
+> **Distributed Feature Engineering**: Production-grade Apache PySpark data engineering pipeline implementing distributed data cleaning, `StructType` schema contracts, missing value imputation, and a 7-stage PySpark MLlib vectorization pipeline on OpenJDK 17 & Python 3.12 LTS.
 
 ---
 
@@ -82,8 +82,8 @@ Data_Cleaning_Feature_Processing_PySpark/
 ├── main.py                         # Interactive terminal CLI control panel
 ├── visualize_features.py           # 300 DPI publication-grade feature visual analytics
 ├── requirements.txt                # Project dependencies
-├── EXPERIMENT_5_REPORT.md          # 15-page comprehensive academic manual
-├── OUTPUT_REPORT_SUBMISSION.md     # Printable 1-2 page evaluator report
+├── TECHNICAL_SPECIFICATION.md      # Comprehensive system architecture & PySpark ML manual
+├── BENCHMARKS_AND_VERIFICATION.md  # System verification audit & benchmark report
 ├── data/
 │   ├── raw_customer_features.csv           # 2,620 raw records with anomalies
 │   ├── cleaned_customer_features.parquet/  # Cleaned, deduplicated, imputed Parquet
@@ -180,6 +180,6 @@ pipeline = Pipeline(stages=stages)
 
 ---
 
-## 📑 Reports & Documentation
-- **Full Academic Lab Manual**: [`EXPERIMENT_5_REPORT.md`](EXPERIMENT_5_REPORT.md) — Theory (Catalyst Optimizer, Project Tungsten, RDDs), Flowchart, Architecture, Code Walkthrough, and 10 Viva Voce Q&As.
-- **Concise Evaluator Submission (1-2 Pages)**: [`OUTPUT_REPORT_SUBMISSION.md`](OUTPUT_REPORT_SUBMISSION.md) — Formatted tables, metrics, and chart references tailored for viva presentation.
+## 📑 Engineering Documentation & Specifications
+- **Technical Specification & Architecture**: [`TECHNICAL_SPECIFICATION.md`](TECHNICAL_SPECIFICATION.md) — Comprehensive technical architecture (Catalyst Optimizer, Project Tungsten, RDDs), execution diagrams, PySpark MLlib pipelines, and 10 engineering architecture FAQs.
+- **Production Verification & Benchmarks**: [`BENCHMARKS_AND_VERIFICATION.md`](BENCHMARKS_AND_VERIFICATION.md) — Complete execution benchmarks, data cleaning audit tables, and benchmark metrics.
